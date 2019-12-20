@@ -1,5 +1,6 @@
 
 describe 'CountSmileys' do
+
     it 'Returns 1 when one valid smiley is input' do
         expect(CountSmileys([':)'])).to eq 1
     end
@@ -20,7 +21,7 @@ describe 'CountSmileys' do
         expect(CountSmileys([':-('])).to eq 0
     end
 
-    it 'Returns 0 when one invalid smiley is input' do
-        # expect(CountSmileys([':('])).to eq 0
+    it 'Returns 2 when two valid smileys and one invalid are input' do
+        expect(CountSmileys([':)', ';-D', '.~D'])).to eq 2
     end
 end
