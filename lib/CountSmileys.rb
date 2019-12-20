@@ -1,3 +1,3 @@
 def CountSmileys(args)
-    1
+    args.length
 end
