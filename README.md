@@ -21,6 +21,8 @@ Invalid smiley faces:
 ## Acceptance Criteria
 Input | Output
 --- | ---
-countSmileys([':)', ';(', ';}', ':-D']); | 2;
-countSmileys([';D', ':-(', ':-)', ';~)']); | 3;
-countSmileys([';]', ':[', ';*', ':$', ';-D']); | 1;
+CountSmileys([':(']) | 0
+CountSmileys([':)']) | 1
+CountSmileys([':)', ';(', ';}', ':-D']); | 2;
+CountSmileys([';D', ':-(', ':-)', ';~)']); | 3;
+CountSmileys([';]', ':[', ';*', ':$', ';-D']); | 1;
