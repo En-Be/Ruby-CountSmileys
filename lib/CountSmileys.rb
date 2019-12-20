@@ -35,18 +35,26 @@ def CountSmileys(args)
             break
         end
 
-        unless CharacterIsInSet(features[1], noses) or CharacterIsInSet(features[1], mouths)
-            break
-        end
-
         if features[2]
+
+            unless CharacterIsInSet(features[1], noses)
+                break
+            end
+
             unless CharacterIsInSet(features[2], mouths)
                 break
             end
+
+        else
+
+            unless CharacterIsInSet(features[1], mouths)
+                break
+            end
+            
         end
 
         result +=1
-        
+
     end
 
     result

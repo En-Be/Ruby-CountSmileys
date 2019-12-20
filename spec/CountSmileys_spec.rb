@@ -24,5 +24,8 @@ describe 'CountSmileys' do
     it 'Returns 2 when two valid smileys and one invalid are input' do
         expect(CountSmileys([':)', ';-D', '.~D'])).to eq 2
     end
-    
+
+    it 'Treats just eyes and nose but no mouth as invalid' do
+        expect(CountSmileys([':-'])).to eq 0
+    end
 end
