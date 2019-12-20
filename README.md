@@ -26,3 +26,29 @@ CountSmileys([':)']) | 1
 CountSmileys([':)', ';(', ';}', ':-D']); | 2;
 CountSmileys([';D', ':-(', ':-)', ';~)']); | 3;
 CountSmileys([';]', ':[', ';*', ':$', ';-D']); | 1;
+
+---
+
+
+## How to run
+
+- Clone the repo
+- Inside the root directory of the project, require the method file in a repl:
+
+    ```
+    irb -r './lib/CountSmileys.rb'
+    ```
+- Call the method with an array of smileys:
+    ```
+    CountSmileys([':)', ';('])
+    ```
+    Which outputs:
+    ```
+    => 1
+    ```
+
+- To see the test coverage, run:
+
+    ```
+    rspec
+    ```
