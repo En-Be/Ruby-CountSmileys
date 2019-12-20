@@ -16,6 +16,10 @@ describe 'CountSmileys' do
         expect(CountSmileys([':_)'])).to eq 0
     end
 
+    it 'Treats anything but ) and D as invalid mouths' do
+        expect(CountSmileys([':-('])).to eq 0
+    end
+
     it 'Returns 0 when one invalid smiley is input' do
         # expect(CountSmileys([':('])).to eq 0
     end
