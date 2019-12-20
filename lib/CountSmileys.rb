@@ -1,0 +1,3 @@
+def CountSmileys(args)
+
+end
