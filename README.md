@@ -18,11 +18,9 @@ Invalid smiley faces:
 ;( :> :} :]
 ```
 
-Example cases:
-```
-countSmileys([':)', ';(', ';}', ':-D']);       // should return 2;
-
-countSmileys([';D', ':-(', ':-)', ';~)']);     // should return 3;
-
-countSmileys([';]', ':[', ';*', ':$', ';-D']); // should return 1;
-```
+## Acceptance Criteria
+Input | Output
+--- | ---
+countSmileys([':)', ';(', ';}', ':-D']); | 2;
+countSmileys([';D', ':-(', ':-)', ';~)']); | 3;
+countSmileys([';]', ':[', ';*', ':$', ';-D']); | 1;
